@@ -1,4 +1,4 @@
-![CI](https://github.com/VadimRoziznan/Advanced-JavaScript/actions/workflows/web.yml/badge.svg)
+![CI](https://github.com/VadimRoziznan/Advanced-JavaScript/env/actions/workflows/web.yml/badge.svg)
 
 # Домашнее задание к занятию "1. Рабочее окружение"
 
