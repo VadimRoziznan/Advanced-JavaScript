@@ -1,0 +1,11 @@
+.grid {
+  display: inline-block;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.square {
+  width: 90px; 
+  height: 90px;
+  background-color: green;
+  margin: 5px; 
+}
