@@ -1,14 +1,22 @@
 import Field from "./Field"
 import Moving from "./Moving"
+import AddImage from "./AddImage"
 
 document.addEventListener('DOMContentLoaded', () => {
-  const field = new Field(document.querySelector('.field'), 4, 4)
+  let field = new Field(document.querySelector('.field'), 4, 4)
   field.fieldGenerator()
-  console.log(document.querySelector('.field').childNodes[1].childNodes[1])
-  const n = new Moving()
+
+  let newImage = new AddImage(document.querySelector('.field'))
   
-  const t = n.randomStep(1, 10)
-  console.log(n.lastNumber)
-  console.log(t)
+
+
+  /*console.log(document.querySelector('.field').childNodes[1].childNodes[1])*/
+  
+  let newMovement = new Moving()
+  setInterval(() => {
+    let step = newMovement.randomStep(4, 4)
+    newImage.createImage(step.width, step.height)
+    console.log(step.width, step.height)
+  }, 3000)
   
 })

@@ -2,16 +2,18 @@ export default class Moving {
   constructor(field_size){
     this.lastNumber = 0
   };
-  randomStep(min, max) {
-    let randomNumber;
+  randomStep(width, height) { 
+    let randomWidth;
+    let randomHeight;
     while (true) {
-        randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
-        if (randomNumber !== this.lastNumber) {
+        randomWidth = Math.floor(Math.random() * width);
+        randomHeight = Math.floor(Math.random() * height);
+        if (randomWidth !== this.lastNumber) {
             break;
         }
     }
-    this.lastNumber = randomNumber;
+    this.lastNumber = randomWidth;
     
-    return randomNumber
+    return {width: randomWidth, height: randomHeight}
   }
 }
