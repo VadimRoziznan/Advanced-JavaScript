@@ -1,9 +1,5 @@
-.grid {
-  display: inline-block;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .square {
+  display: inline-block;
   width: 90px; 
   height: 90px;
   background-color: green;

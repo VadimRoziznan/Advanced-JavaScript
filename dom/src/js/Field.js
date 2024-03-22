@@ -6,17 +6,18 @@ export default class Field {
   }
 
   fieldGenerator() {
-    for (let index = 0; index < this.width; index++) {
-      let width = document.createElement('div');
-      width.classList.add('grid');
-      this._element.appendChild(width);
-      for (let index = 0; index < this.height; index++) {
-        const height = document.createElement('div');
-        height.classList.add('square');
-        width.appendChild(height);
+    for (let index = 0; index < this.height; index++) {
+      let height = document.createElement('div');
+      height.classList.add('grid');
+      this._element.appendChild(height);
+      for (let index = 0; index < this.width; index++) {
+        const width = document.createElement('div');
+        width.classList.add('square');
+        height.appendChild(width);
         
       }
     }
+    
 
 }
 }
