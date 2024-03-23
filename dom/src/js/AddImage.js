@@ -1,18 +1,22 @@
 export default class AddImage {
-    constructor(element) {
-        this._element = element;
-        this.imagePath = 'goblin.png';
-    }
+  constructor(element) {
+    this.element = element;
+  }
 
-    createImage(x, y){
-        let image = document.createElement('img');
-        image.src = this.imagePath;
-        this._element.childNodes[x].childNodes[y].appendChild(image)
-        return image
-    }
+  createImage(x, y) {
+    const divs = this.element.querySelectorAll('.square');
+    const image = document.createElement('img');
+    image.src = require('../images/goblin.png');
+    divs.forEach((div) => {
+      const imageСheck = div.childNodes[0];
+      if (imageСheck) {
+        AddImage.removeImage(imageСheck);
+      }
+    });
+    this.element.childNodes[x].childNodes[y].appendChild(image);
+  }
 
-    removeImage(imageElement) {
-        imageElement.remove();
-    }
-
+  static removeImage(image) {
+    image.remove();
+  }
 }
