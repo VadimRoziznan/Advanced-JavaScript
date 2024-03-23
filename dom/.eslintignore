@@ -1,2 +1,5 @@
 dist
 __test__
+coverage
+doc
+webpack.*.js
