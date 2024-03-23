@@ -1,4 +1,4 @@
-![CI](https://github.com/VadimRoziznan/ahj-homeworks/actions/workflows/web.yml/badge.svg)
+![CI](https://github.com/VadimRoziznan/Advanced-JavaScript/dom/actions/workflows/web.yml/badge.svg)
 
 # Домашнее задание к занятию "2. DOM"
 
